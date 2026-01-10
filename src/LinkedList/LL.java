@@ -76,6 +76,30 @@ public class LL {
 
     }
 
+    // using recursion
+
+    public void insertRecur(int val, int idx){
+
+        Node temp = head;
+        Recursion(val,idx,temp);
+
+
+    }
+    public void Recursion(int val, int idx,Node temp){
+        if(temp==null){
+            return;
+        }
+        if(idx==1){
+            Node node = new Node( val);
+            node.next=temp.next;
+            temp.next=node;
+            size++;
+            return;
+        }
+        temp=temp.next;
+        Recursion(val,idx-1,temp);
+    }
+
 
 
     // DELETE NODES

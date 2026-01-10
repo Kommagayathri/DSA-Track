@@ -8,8 +8,9 @@ public class Main {
         list.insertFirst(8);
         list.insertFirst(7);
         list.insertLast(10);
-        list.insertAtIndex(14,3);
-        System.out.println(list.DeleteFirst());
+//        list.insertAtIndex(14,3);
+        list.insertRecur(99,3);
+//        System.out.println(list.DeleteFirst());
         list.Display();
     }
 }
