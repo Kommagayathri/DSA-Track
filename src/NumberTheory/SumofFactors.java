@@ -26,15 +26,23 @@ public class SumofFactors {
         int sum =0;
         for(int i=1;i*i<=N;i++){
             if(N%i==0){
-                if(i==N/i){
-                    sum +=i;
-                }
-                else {
-                    sum +=i+N/i;
+//                if(i==N/i){
+//                    sum +=i;
+//                }
+//                else {
+//                    sum +=i+N/i;
+//                }
+             sum+=i;
+                if(N/i!=i){
+                    sum+=N/i;
                 }
             }
+
         }
         return sum;
 
     }
+
+    // Using Prime Fctorization
+    
 }
